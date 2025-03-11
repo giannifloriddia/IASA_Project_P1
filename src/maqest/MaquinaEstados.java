@@ -7,6 +7,15 @@ import ambiente.Evento;
  * Classe que representa uma máquina de estados,
  * uma máquina de estados é composta por um estado inicial e um estado atual,
  * e é responsável por processar eventos e transições entre estados.
+ * Neste caso, foi utilizado o modelo geral de sistema digital
+ * - Função de transição de estado (δ): determina o próximo estado com base
+ *   no estado atual e na entrada recebida.
+ *   δ: Q × Σ → Q
+ *
+ *  - Função de saída (λ): define a saída do sistema,
+ *  dependendo do estado e da entrada (Mealy).
+ *  λ: Q × Σ → Z
+ *
  */
 public class MaquinaEstados {
 

@@ -21,7 +21,9 @@ public class AmbienteJogo implements Ambiente {
      * Construtor da classe AmbienteJogo,
      * onde é inicializado o map de eventos
      * como um HashMap e adicionados os eventos
-     * correspondentes a cada chave
+     * correspondentes a cada chave.
+     * As chaves são as letras correspondentes a cada evento,
+     * para que o utilizador possa escolher o evento
      */
     public AmbienteJogo(){
         eventos = new HashMap<String, EventoJogo>();
@@ -35,6 +37,7 @@ public class AmbienteJogo implements Ambiente {
 
     /**
      * Metodo evoluir, que gera um evento
+     * utilizando o metodo local gerarEvento
      */
     public void evoluir(){
         evento = gerarEvento();

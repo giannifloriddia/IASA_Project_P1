@@ -1,7 +1,8 @@
 package agente;
 
 /**
- * Interface Controlo, que é implementada pelas classes Percepcao e Acao
+ * Interface Controlo, que é implementada pelas
+ * classes Agente e ControloPersonagem
  * e que contém o metodo processar.
  * Responsavel pelo papel de controlador.
  */

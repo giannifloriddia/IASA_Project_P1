@@ -3,15 +3,15 @@ package agente;
 import ambiente.Evento;
 
 /**
- * Classe Percepcao, que implementa a interface Controlo.
+ * Classe Percepcao
  */
-public class Percepcao implements Controlo{
+public class Percepcao{
 
     /**
      * Construtor da classe Percepcao, com um evento como argumento.
      */
     public Percepcao(Evento evento){
-
+        this.evento = evento;
     }
 
     /**
@@ -24,11 +24,4 @@ public class Percepcao implements Controlo{
         return evento;
     }
 
-    /**
-     * Metodo processar, obrigatorio pela interface Controlo,
-     * que recebe uma percepcao e devolve uma ação.
-     */
-    public Acao processar(Percepcao percepcao) {
-        return null;
-    }
 }
